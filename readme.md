@@ -972,3 +972,5 @@ Then run `:PackerSync` in NeoVim
 You can also run `:PackerUpdate` to install and sync files
 
 To use hover effect on tree sitter, run `:TSInstall markdown markdown_inline`
+
+you can refresh init.lua file by running this command `:luafile init.lua`

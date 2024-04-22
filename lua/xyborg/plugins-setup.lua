@@ -103,6 +103,9 @@ return packer.startup(function(use)
 	-- nvim dap ui
 	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } })
 
+	-- rainbow
+	use({ "p00f/nvim-ts-rainbow" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

@@ -106,6 +106,26 @@ return packer.startup(function(use)
 	-- rainbow
 	use({ "p00f/nvim-ts-rainbow" })
 
+	-- File manager
+	use({
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v2.x",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-tree/nvim-web-devicons",
+			"MunifTanjim/nui.nvim",
+		},
+	})
+
+	-- toggle term
+	use({
+		"akinsho/toggleterm.nvim",
+		tag = "*",
+		config = function()
+			require("toggleterm").setup()
+		end,
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

@@ -44,3 +44,6 @@ vim.api.nvim_set_keymap("n", "<leader>k", ":move -2<CR>", { noremap = true, sile
 vim.api.nvim_set_keymap("n", "<leader>j", ":move +1<CR>", { noremap = true, silent = true })
 
 vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
+
+vim.keymap.set("n", "<leader>th", "<CMD>ToggleTerm size=10 direction=horizontal<CR>")
+vim.keymap.set("n", "<leader>tv", "<CMD>ToggleTerm size=80 direction=vertical<CR>")

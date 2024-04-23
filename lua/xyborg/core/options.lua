@@ -42,3 +42,14 @@ opt.iskeyword:append("-")
 -- Indentation lines
 opt.list = true
 opt.listchars:append("tab:│ ")
+
+-- syntax on
+opt.syntax = "on"
+
+-- ruler
+opt.ruler = true
+
+opt.showcmd = true
+opt.wildmenu = true
+
+-- opt.hidden = true

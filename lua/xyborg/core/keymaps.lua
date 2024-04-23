@@ -47,3 +47,5 @@ vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
 
 vim.keymap.set("n", "<leader>th", "<CMD>ToggleTerm size=10 direction=horizontal<CR>")
 vim.keymap.set("n", "<leader>tv", "<CMD>ToggleTerm size=80 direction=vertical<CR>")
+-- Set key mapping to exit terminal mode in Neovim
+vim.api.nvim_set_keymap("t", "<leader>th", "<C-\\><C-n>", { noremap = true, silent = true })

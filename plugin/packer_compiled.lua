@@ -194,6 +194,12 @@ _G.packer_plugins = {
     path = "/Users/abayomiogunnusi/.local/share/nvim/site/pack/packer/start/nvim-nio",
     url = "https://github.com/nvim-neotest/nvim-nio"
   },
+  ["nvim-transparent"] = {
+    config = { "\27LJ\2\nå\3\0\0\4\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\0\0=\3\6\0024\3\0\0=\3\a\2B\0\2\1K\0\1\0\19exclude_groups\17extra_groups\vgroups\1\0\3\vgroups\0\17extra_groups\0\19exclude_groups\0\1\26\0\0\vNormal\rNormalNC\fComment\rConstant\fSpecial\15Identifier\14Statement\fPreProc\tType\15Underlined\tTodo\vString\rFunction\16Conditional\vRepeat\rOperator\14Structure\vLineNr\fNonText\15SignColumn\15CursorLine\17CursorLineNr\15StatusLine\17StatusLineNC\16EndOfBuffer\nsetup\16transparent\frequire\0" },
+    loaded = true,
+    path = "/Users/abayomiogunnusi/.local/share/nvim/site/pack/packer/start/nvim-transparent",
+    url = "https://github.com/xiyaowong/nvim-transparent"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/abayomiogunnusi/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -273,6 +279,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-transparent
+time([[Config for nvim-transparent]], true)
+try_loadstring("\27LJ\2\nå\3\0\0\4\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\0\0=\3\6\0024\3\0\0=\3\a\2B\0\2\1K\0\1\0\19exclude_groups\17extra_groups\vgroups\1\0\3\vgroups\0\17extra_groups\0\19exclude_groups\0\1\26\0\0\vNormal\rNormalNC\fComment\rConstant\fSpecial\15Identifier\14Statement\fPreProc\tType\15Underlined\tTodo\vString\rFunction\16Conditional\vRepeat\rOperator\14Structure\vLineNr\fNonText\15SignColumn\15CursorLine\17CursorLineNr\15StatusLine\17StatusLineNC\16EndOfBuffer\nsetup\16transparent\frequire\0", "config", "nvim-transparent")
+time([[Config for nvim-transparent]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")

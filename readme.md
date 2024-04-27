@@ -974,3 +974,57 @@ You can also run `:PackerUpdate` to install and sync files
 To use hover effect on tree sitter, run `:TSInstall markdown markdown_inline`
 
 you can refresh init.lua file by running this command `:luafile init.lua`
+
+#### search for the words under the cursor
+
+In normal mode, type the following command to search for the word under the cursor:
+i.e Shift + \*
+
+```bash
+*  # search for the word under the cursor
+```
+
+Type N to search for the previous occurrence of the word under the cursor.
+Type n to search for the next occurrence of the word under the cursor.
+
+#### Change something using the c motion - c stands for change
+
+```bash
+ciw # change inner word
+caw # change a word
+c$ # change to the end of the line
+c0 # change to the beginning of the line
+```
+
+#### Replay the last change
+
+```bash
+. # replay the last change
+```
+
+#### Change a word globally
+
+```bash
+:%s/oldword/newword/g # change all occurrences of oldword to newword
+```
+
+#### Change a word globally with confirmation
+
+```bash
+:%s/oldword/newword/gc # change all occurrences of oldword to newword with confirmation
+```
+
+#### Visually highlight the word under the cursor and copy
+
+```bash
+viw # visually highlight the word under the cursor
+y # copy the highlighted word
+```
+
+#### Vim register
+
+Vim stores everything you delete or yank in registers. You can access the registers by typing the following command:
+
+```bash
+:reg
+```

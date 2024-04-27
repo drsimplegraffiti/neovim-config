@@ -73,7 +73,14 @@ return packer.startup(function(use)
 	-- configure lsp servers
 	use("neovim/nvim-lspconfig") -- lsp configuration
 	use("hrsh7th/cmp-nvim-lsp")
-	use({ "glepnir/lspsaga.nvim", branch = "main" })
+  use({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+    requires = {
+      { "nvim-tree/nvim-web-devicons" },
+      { "nvim-treesitter/nvim-treesitter" },
+    },
+  }) -- enhanced lsp uis
 
 	use("jose-elias-alvarez/typescript.nvim")
 	use("onsails/lspkind.nvim")
